@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./index.css";
 const messages = [
   "Learn React ⚛️",
@@ -5,7 +6,11 @@ const messages = [
   "Invest your new income 🤑",
 ];
 function App() {
-  const step = 1;
+  const [step, setStep] = useState(1);
+
+  function handleNext() {}
+
+  function handlePrevious() {}
   return (
     <div className="steps">
       <div className="numbers">
