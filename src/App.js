@@ -7,7 +7,7 @@ const messages = [
 ];
 function App() {
   const [step, setStep] = useState(1);
-
+  const [test, setTest] = useState({ name: "Jonas" });
   function handleNext() {
     if (step < 3) setStep(step + 1);
   }
@@ -24,6 +24,7 @@ function App() {
       </div>
       <p className="message">
         Step {step}: {messages[step - 1]}
+        {test.name}
       </p>
       <div className="buttons">
         <button
