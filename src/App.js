@@ -10,6 +10,7 @@ function App() {
   const [test, setTest] = useState({ name: "Jonas" });
   function handleNext() {
     if (step < 3) setStep(step + 1);
+    setTest({ name: "Soala" });
   }
 
   function handlePrevious() {
