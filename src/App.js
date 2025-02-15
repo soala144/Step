@@ -19,8 +19,8 @@ function App() {
   }
   return (
     <>
-      <button className="close" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? "&times;" : "&plus;"}
+      <button className="close" onClick={() => setIsOpen((is) => !is)}>
+        {isOpen ? <span>&times;</span> : <span>+</span>}
       </button>
       {isOpen && (
         <div className="steps">
